@@ -12,19 +12,20 @@
     <!-- #882947  Dark Main -->
     <!-- #333333  Dark Text -->
 </head>
-<body>
+<body class="h-[1000vh] text-[#333333]">
+  <!-- Navbar -->
   <nav class="lg:mx-[4rem] my-[1.5rem] flex items-center justify-between">
     <div class="flex items-center justify-start w-full lg:w-auto ms-[2rem] lg:ms-0  ">
       <img src="assets/logo.svg" alt="" width="40" class="lg:inline-block">
     </div>
-    <h1 class="font-semibold text-[#c13d60] lg:hidden">healtc.</h1>
-    <div class="lg:hidden flex items-center justify-end me-[2rem] w-full lg:w-auto">
-      <img src="assets/hamburger.svg" alt="" width="40">
+    <h1 class="font-semibold text-[#c13d60] lg:hidden ">healtc.</h1>
+    <div class="lg:hidden flex items-center justify-end me-[2rem] w-full lg:w-auto ">
+      <img src="assets/hamburger.svg" alt="" width="40" class="buttontoggle">
     </div>
     <div class="hidden lg:flex">
-      <ul class="lg:flex space-x-6 text-[#333333] hidden">
+      <ul class="lg:flex space-x-6   hidden">
         <a href=""><li class="nav_active py-3 px-5 rounded-full">Beranda</li></a>
-        <a href=""><li class="nav_btn rounded-full py-3 px-5">Tentang Kami</li></a>
+        <a href="about.html"><li class="nav_btn rounded-full py-3 px-5">Tentang Kami</li></a>
         <a href=""><li class="nav_btn rounded-full py-3 px-5">Kesehatan</li></a>
         <a href=""><li class="nav_btn rounded-full py-3 px-5">Kontak Kami</li></a>
       </ul>
@@ -34,13 +35,29 @@
       <a href="" class="inline-block px-8 py-3 bg-[#c13d60] text-white rounded-tl-[10px] rounded-bl-[20px] rounded-tr-[15px] rounded-br-[10px] hover:bg-[#882947] hover:text-white transition-colors duration-300 ease-in-out">Register</a>
     </div>
   </nav>
-  
+  <div class="hidden lg:hidden navmobile fixed top-[100px] left-0 right-0 bg-white z-50 overflow-hidden transition duration-300 ease-in-out">
+    <ul class=" space-x-6  ">
+      <a href=""><li class="nav_active py-3 px-5">Beranda</li></a>
+      <a href="about.html"><li class="nav_btn  py-3 px-5">Tentang Kami</li></a>
+      <a href=""><li class="nav_btn  py-3 px-5">Kesehatan</li></a>
+      <a href=""><li class="nav_btn  py-3 px-5">Kontak Kami</li></a>
+    </ul>
+    <div class=" flex space-x-4 w-full lg:w-auto px-4 py-[1rem]">
+      <a href="" class="px-8 w-1/2 py-3 text-[#c13d60] border-[#c13d60] border-[1px] rounded-tl-[10px] rounded-bl-[20px] rounded-tr-[15px] rounded-br-[10px] hover:bg-[#c13d60] hover:text-white transition-colors duration-300 ease-in-out text-center">Login</a>
+      <a href="" class="px-8 w-1/2 py-3 bg-[#c13d60] text-white rounded-tl-[10px] rounded-bl-[20px] rounded-tr-[15px] rounded-br-[10px] hover:bg-[#882947] hover:text-white transition-colors duration-300 ease-in-out text-center">Register</a>
+    </div>
+  </div>
+  <!-- End Navbar -->
+
+
+  <!-- Hero -->
       <section>
-        <div id="hero" class="w-full md:flex">
-            <div class="md:w-1/2">
-                <div class="lg:ms-[5rem] lg:mt-[5rem] ms-[2rem] mt-[2rem]">
-                    <h1 class="font-semibold lg:text-[45px] text-[30px] leading-tight">Menambah Ilmu <span class="text-[#c13d60]">Kesehatan</span> Bersama <span class="text-[#c13d60]">healtc.</span></h1>
-                    <p class="font-light max-w-md mt-[1rem]">Platform online yang komprehensif dan didedikasikan untuk memberdayakan individu dengan pengetahuan kesehatan yang esensial</p>
+        <div id="hero" class="w-full lg:flex">
+            <div class="lg:w-1/2">
+                <div class="lg:ms-[5rem] lg:mx-0 mt-[5rem] mx-[2rem]">
+                    <h1 class="font-semibold md:text-[40px] text-[30px] leading-tight  ">Menambah Ilmu <span class="text-[#c13d60]">Kesehatan</span> Bersama <span class="text-[#c13d60]">healtc.</span></h1>
+                    <p class="font-light lg:max-w-md w-full mt-[1rem] md:text-[25px] lg:hidden">Platform online yang komprehensif dan didedikasikan untuk memberdayakan individu dengan pengetahuan kesehatan yang esensial</p>
+                    <p class="font-light lg:max-w-md w-full mt-[1rem] lg:block hidden">Platform online yang komprehensif dan didedikasikan untuk memberdayakan individu dengan pengetahuan kesehatan yang esensial</p>
                     <div class="mt-[1rem]">
                         <a href="" class="inline-block px-8 py-3 bg-[#c13d60] text-white rounded-tl-[10px] rounded-bl-[20px] rounded-tr-[15px] rounded-br-[10px] hover:bg-[#882947] hover:text-white transition-colors duration-300 ease-in-out">Jelajahi Sekarang</a>
                     </div>
@@ -48,21 +65,21 @@
             </div>
             
             <div class="w-1/2 relative">
-              <div class="absolute px-[130px] py-[120px] top-[93px] left-[120px] bg-[#c13d60] z-0 rounded-[30px] ms-[4rem] hidden md:block"></div>
-              <img src="assets/image1.png" class="z-10 hidden md:block relative ms-[4rem]" alt="" width="500"> 
+              <div class="absolute px-[130px] py-[120px] top-[93px] left-[120px] bg-[#c13d60] z-0 rounded-[30px] ms-[4rem] hidden lg:block"></div>
+              <img src="assets/image1.png" class="z-10 hidden lg:block relative ms-[4rem] " alt="" width="500"> 
 
               <!-- https://www.freepik.com/free-photo/smiling-asian-doctor-female-nurse-holding-clipboard-pen-wearing-uniform-with-gloves-writing-pati_20091838.htm#fromView=search&page=1&position=0&uuid=b391e963-1894-484b-8890-8cbaf0664ee5 Image 1 -->
                
-              <div class="absolute px-[50px] py-[25px] top-[280px] right-[40px] bg-[#a22e4f] z-20 rounded-[30px] ">
+              <div class="absolute px-[50px] py-[25px] top-[280px] bg-[#a22e4f] z-20 rounded-[30px] hidden lg:block">
                 <div class="flex text-white mx-auto gap-6">
                   <div class="text-center">
-                    <h1 class="font-semibold text-3xl" data-target="300">0</h1>
+                    <h1 class="font-semibold text-3xl" data-target="2300">0</h1>
                     <p class="font-light text-sm">Pelanggan</p>
                   </div>
                   <div class="py-[2rem] px-[1px] bg-white rounded-md"></div>
                   <div class="text-center">
                     <h1 class="font-semibold text-3xl" data-target="25">0</h1>
-                    <p class="font-light text-sm">Dokter Pengajar</p>
+                    <p class="font-light text-sm">Artikel Kesehatan</p>
                   </div>
                   <div class="py-[2rem] px-[1px] bg-white rounded-md"></div>
                   <div class="text-center">
@@ -78,7 +95,99 @@
               </div>
           </div>
         </div>
+        
+    </section>    
+    <!-- End Hero -->
+
+    <!-- Konten -->
+    <section>
+      <div class="ms-[2rem]  lg:mt-[10rem] lg:mb-[1rem]">
+        <div class="flex">
+          <div class="absolute px-[220px] py-[1px] rounded-full bg-[#B8B8B8]  lg:block hidden"></div>
+          <div class="absolute left-[800px] px-[120px] py-[1px] rounded-full bg-[#B8B8B8]  lg:block hidden"></div>
+        </div>
+      </div>
+      <div class="w-full mt-[5rem] block md:flex items-center">
+        <div class="md:w-1/2 w-full mt-[2rem] md:mt-[0rem]"> 
+          <div class="mx-[2rem] lg:mx-[3rem] grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- 1 -->
+            <div class="group flex flex-col items-center">
+              <div class="relative w-full h-[200px] rounded-lg bg-[#c13d60] transition duration-300 ease-in-out flex flex-col justify-center items-center">
+                <img src="assets/penyakit-umum.svg" alt="" class="w-[100px] h-[100px] transition-all duration-300 ease-in-out group-hover:w-[130px] group-hover:h-[130px]">
+                <!-- https://www.freepik.com/free-vector/virus-concept-illustration_7321342.htm#fromView=search&page=1&position=0&uuid=cf0ade3f-5b6b-4a98-af1c-b7778c5dd6b9 -->
+                <h1 class="text-center text-2xl font-semibold text-white mt-4">Penyakit Umum</h1>
+              </div>
+            </div>
+            <!-- End 1 -->
+          
+            <!-- 2 -->
+            <div class="group flex flex-col items-center">
+              <div class="relative w-full h-[200px]  rounded-lg bg-[#c13d60] transition duration-300 ease-in-out flex flex-col justify-center items-center">
+                <img src="assets/lemak.jpg" alt="" class="w-[100px] h-[100px] transition-all duration-300 ease-in-out group-hover:w-[130px] group-hover:h-[130px]">
+                <!-- https://www.freepik.com/free-vector/fat-human-skin-caused-pimple_22717333.htm#fromView=search&page=1&position=3&uuid=0ca295c7-4bc7-4700-abbd-87a344efb0c4 -->
+                <h1 class="text-center text-2xl font-semibold text-white mt-4">Tips Diet</h1>
+              </div>
+            </div>
+            <!-- End 2 -->
+          
+            <!-- 3 -->
+            <div class="group flex flex-col items-center">
+              <div class="relative w-full h-[200px] rounded-lg bg-[#c13d60] transition duration-300 ease-in-out flex flex-col justify-center items-center">
+                <img src="assets/lari.svg" alt="" class="w-[100px] h-[100px] transition-all duration-300 ease-in-out group-hover:w-[130px] group-hover:h-[130px]">
+                <!-- https://www.freepik.com/free-vector/running-concept-illustration_21118096.htm#fromView=search&page=1&position=4&uuid=855cbadb-12b5-4ce2-99fd-00fc6eef784e -->
+                <h1 class="text-center text-2xl font-semibold text-white mt-4">Kebugaran Badan</h1>
+              </div>
+            </div>
+            <!-- End 3 -->
+          
+            <!-- 4 -->
+            <div class="group flex flex-col items-center">
+              <div class="relative w-full h-[200px] rounded-lg bg-[#c13d60] transition duration-300 ease-in-out flex flex-col justify-center items-center">
+                <img src="assets/kesehatan-mental.svg" alt="" class="w-[100px] h-[100px] transition-all duration-300 ease-in-out group-hover:w-[130px] group-hover:h-[130px]">
+                <!-- https://www.freepik.com/free-vector/schizophrenia-concept-illustration_10198495.htm#fromView=search&page=1&position=6&uuid=9afd00b1-7b07-4461-a625-c8b4c6d5eb6b -->
+                <h1 class="text-center text-2xl font-semibold text-white mt-4">Kesehatan Mental</h1>
+              </div>
+            </div>         
+            <!-- End 4 -->
+          </div>
+        </div>
+        <div class="md:w-1/2 mx-[3rem] w-full px-[3rem]">
+          <div class="">
+            <h1 class="font-semibold text-4xl ">Tingkatkan Pengetahuan <span class="text-[#c13d60]">Ilmu Kesehatanmu</span></h1>
+            <p class="mt-[2rem]   max-w-md">Tingkatkan pengetahuan kesehatanmu dengan cara yang seru dan menyenangkan! Bayangkan bisa menjaga kesehatan sambil tetap menikmati hidup.</p>
+            <div class="mt-[2rem]">
+              <a href="" class="inline-block px-8 py-3 bg-[#c13d60] text-white rounded-tl-[10px] rounded-bl-[20px] rounded-tr-[15px] rounded-br-[10px] hover:bg-[#882947] hover:text-white transition-colors duration-300 ease-in-out">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex mt-[5rem]">
+        <div class="absolute left-[600px] px-[120px] py-[1px] rounded-full bg-[#B8B8B8]  lg:block hidden"></div>
+        <div class="absolute left-[100px] px-[120px] py-[1px] rounded-full bg-[#B8B8B8]  lg:block hidden"></div>
+      </div>
     </section>
+    <!-- End Konten -->
+
+    <!-- Video -->
+    <section class="mt-[10rem]"> 
+      <div class="w-full">
+        <div class="flex justify-between items-center w-full p-10">
+          <div class="text-left">
+              <h1 class="md:text-4xl text-2xl font-semibold">Video Pembelajaran
+                Dengan <br><span class="text-[#c13d60]">Dokter Profesional</span></h1>
+          </div>
+          <div class="text-right md:block hidden">
+              <p class="md:text-md text-sm max-w-md">Cara asyik untuk belajar kesehatan langsung dari dokter keren! Temukan penjelasan seru tentang berbagai topik medis, dari pencegahan penyakit hingga tips menjaga kesehatan sehari-hari.</p>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="assets/image-3.png" alt="" class="w-screen h-[500px] object-cover object-top">
+          <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay hitam -->
+          <img src="assets/play-circle.svg" alt="" class="absolute inset-0 m-auto w-16 h-16">
+        </div>
+      </div>
+    </section>    
+    <!-- End Video -->
   
 </body>
 </html>
