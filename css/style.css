@@ -16,6 +16,13 @@ body{
 }
 .login-section {
     background-image: url('../assets/login-image.jpg');
+    /* https://www.freepik.com/free-photo/elderly-female-smiling-with-doctor-visiting-senior-patient-woman-hospital-ward_7813357.htm#fromView=search&page=1&position=1&uuid=cae1a029-3a2b-4a29-a28c-a5cd89798803 */
+    background-size: cover;
+    background-position: center;
+}
+.register-section {
+    background-image: url('../assets/register-image.jpg');
+    /* https://www.freepik.com/free-photo/elderly-female-smiling-with-doctor-visiting-senior-patient-woman-hospital-ward_7813357.htm#fromView=search&page=1&position=1&uuid=cae1a029-3a2b-4a29-a28c-a5cd89798803 */
     background-size: cover;
     background-position: center;
 }
