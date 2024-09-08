@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/logo.svg">
+    <script src="script.js"></script>
+    <title>healtc. | Kontak</title>
+    <!-- #c13d60  Main Color-->
+    <!-- #882947  Dark Main -->
+    <!-- #333333  Dark Text -->
+</head>
+<body>
+      <!-- Navbar -->
+  <nav class="lg:mx-[4rem] my-[1.5rem] flex items-center justify-between">
+    <div class="flex items-center justify-start w-full lg:w-auto ms-[2rem] lg:ms-0  ">
+      <img src="assets/logo.svg" alt="" width="40" class="lg:inline-block">
+    </div>
+    <h1 class="font-semibold text-[#c13d60] lg:hidden ">healtc.</h1>
+    <div class="lg:hidden flex items-center justify-end me-[2rem] w-full lg:w-auto ">
+      <img src="assets/hamburger.svg" alt="" width="40" class="buttontoggle">
+    </div>
+    <div class="hidden lg:flex">
+      <ul class="lg:flex space-x-6   hidden">
+        <a href="index.html"><li class="nav_btn py-3 px-5 rounded-full">Beranda</li></a>
+        <a href="about.html"><li class="nav_btn rounded-full py-3 px-5">Tentang Kami</li></a>
+        <a href="health.html"><li class="nav_btn rounded-full py-3 px-5">Kesehatan</li></a>
+        <a href="contact.html"><li class="nav_active rounded-full py-3 px-5">Kontak Kami</li></a>
+      </ul>
+    </div>
+    <div class="hidden lg:flex space-x-4">
+      <a href="login.html" class="px-8 py-3 text-[#c13d60] border-[#c13d60] border-[1px] rounded-tl-[10px] rounded-bl-[20px] rounded-tr-[15px] rounded-br-[10px] hover:bg-[#c13d60] hover:text-white transition-colors duration-300 ease-in-out">Login</a>
+      <a href="register.html" class="inline-block px-8 py-3 bg-[#c13d60] text-white rounded-tl-[10px] rounded-bl-[20px] rounded-tr-[15px] rounded-br-[10px] hover:bg-[#882947] hover:text-white transition-colors duration-300 ease-in-out">Register</a>
+    </div>
+  </nav>
+  <div class="hidden lg:hidden navmobile fixed top-[100px] left-0 right-0 bg-white z-50 overflow-hidden transition duration-300 ease-in-out">
+    <ul class=" space-x-6  ">
+      <a href="index.html"><li class="nav_btn py-3 px-5">Beranda</li></a>
+      <a href="about.html"><li class="nav_btn  py-3 px-5">Tentang Kami</li></a>
+      <a href="health.html"><li class="nav_btn  py-3 px-5">Kesehatan</li></a>
+      <a href="contact.html"><li class="nav_active  py-3 px-5">Kontak Kami</li></a>
+    </ul>
+    <div class=" flex space-x-4 w-full lg:w-auto px-4 py-[1rem]">
+      <a href="login.html" class="px-8 w-1/2 py-3 text-[#c13d60] border-[#c13d60] border-[1px] rounded-tl-[10px] rounded-bl-[20px] rounded-tr-[15px] rounded-br-[10px] hover:bg-[#c13d60] hover:text-white transition-colors duration-300 ease-in-out text-center">Login</a>
+      <a href="register.html" class="px-8 w-1/2 py-3 bg-[#c13d60] text-white rounded-tl-[10px] rounded-bl-[20px] rounded-tr-[15px] rounded-br-[10px] hover:bg-[#882947] hover:text-white transition-colors duration-300 ease-in-out text-center">Register</a>
+    </div>
+  </div>
+  <!-- End Navbar -->
+
+
+  <!-- Kontak -->
+    <section class="px-24">
+        <div class="w-full mt-[6rem] flex flex-col-reverse md:flex-row">
+            <div class="md:w-1/2 w-full hidden md:inline">
+                <div class="flex justify-center items-center">
+                    <div class="space-y-5">
+                        <h1 class="font-bold text-5xl text-[#333333]">Kontak Kami</h1>
+                        <p class="text-[#333333]">Ada kendala dalam menggunakan platform healtc? Hubungi kami segera!</p>
+                        <div class="flex items-center space-x-3">
+                            <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.9962 9.33135C11.4255 9.33135 9.32767 11.4293 9.32767 14C9.32767 16.5707 11.4255 18.6687 13.9962 18.6687C16.5669 18.6687 18.6648 16.5707 18.6648 14C18.6648 11.4293 16.5669 9.33135 13.9962 9.33135ZM27.9984 14C27.9984 12.0667 28.0159 10.1509 27.9074 8.2211C27.7988 5.97958 27.2875 3.99024 25.6484 2.35113C24.0058 0.708519 22.02 0.200677 19.7785 0.0921032C17.8453 -0.0164701 15.9295 0.00104176 13.9997 0.00104176C12.0665 0.00104176 10.1507 -0.0164701 8.22094 0.0921032C5.97947 0.200677 3.99016 0.712022 2.35109 2.35113C0.708507 3.99374 0.200673 5.97958 0.0921015 8.2211C-0.0164698 10.1544 0.00104174 12.0702 0.00104174 14C0.00104174 15.9298 -0.0164698 17.8491 0.0921015 19.7789C0.200673 22.0204 0.712009 24.0098 2.35109 25.6489C3.99367 27.2915 5.97947 27.7993 8.22094 27.9079C10.1542 28.0165 12.07 27.999 13.9997 27.999C15.933 27.999 17.8488 28.0165 19.7785 27.9079C22.02 27.7993 24.0093 27.288 25.6484 25.6489C27.291 24.0063 27.7988 22.0204 27.9074 19.7789C28.0195 17.8491 27.9984 15.9333 27.9984 14ZM13.9962 21.1834C10.0211 21.1834 6.81302 17.9752 6.81302 14C6.81302 10.0248 10.0211 6.81665 13.9962 6.81665C17.9713 6.81665 21.1795 10.0248 21.1795 14C21.1795 17.9752 17.9713 21.1834 13.9962 21.1834ZM21.4736 8.20008C20.5455 8.20008 19.796 7.45057 19.796 6.52245C19.796 5.59432 20.5455 4.84481 21.4736 4.84481C22.4018 4.84481 23.1513 5.59432 23.1513 6.52245C23.1515 6.74284 23.1083 6.96111 23.0241 7.16478C22.9399 7.36844 22.8163 7.55349 22.6605 7.70933C22.5047 7.86517 22.3196 7.98873 22.116 8.07294C21.9123 8.15715 21.694 8.20036 21.4736 8.20008Z" fill="#333333"/>
+                            </svg>
+                            <span class="text-[#333333]">@healtc.id</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg width="20" height="30" viewBox="0 0 13 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.66667 14.8572H11.7619L13 9.90485H8.66667V7.42866C8.66667 6.15343 8.66667 4.95247 11.1429 4.95247H13V0.792474C12.5964 0.739236 11.0723 0.619141 9.46276 0.619141C6.10133 0.619141 3.71429 2.67066 3.71429 6.43819V9.90485H0V14.8572H3.71429V25.381H8.66667V14.8572Z" fill="#333333"/>
+                            </svg>
+                            <span class="text-[#333333]">healtc.id</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg width="20" height="30" viewBox="0 0 40 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M34 0.45459H6C4.4087 0.45459 2.88258 1.08673 1.75736 2.21195C0.632141 3.33717 0 4.86329 0 6.45459V26.4546C0 28.0459 0.632141 29.572 1.75736 30.6972C2.88258 31.8224 4.4087 32.4546 6 32.4546H34C35.5913 32.4546 37.1174 31.8224 38.2426 30.6972C39.3679 29.572 40 28.0459 40 26.4546V6.45459C40 4.86329 39.3679 3.33717 38.2426 2.21195C37.1174 1.08673 35.5913 0.45459 34 0.45459ZM34 4.45459L21 13.3946C20.696 13.5701 20.3511 13.6625 20 13.6625C19.6489 13.6625 19.304 13.5701 19 13.3946L6 4.45459H34Z" fill="#333333"/>
+                            </svg>
+                            <span class="text-[#333333]">healtcidn@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 w-full">
+                <div class="flex justify-center items-center">
+                    <div class="">
+                        <form action="">
+                            <div class="bg-white rounded-lg w-[300px] md:w-[400px] px-4">
+                                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Ada Kendala?</h2>
+                                <p class="text-sm text-gray-500 mb-6">Masuk ke akunmu</p>
+                
+                                <!-- Pertanyaan Input -->
+                                <div class="mb-4">
+                                    <label for="pertanyaan" class="block text-sm font-medium text-gray-700 mb-2">Pertanyaan</label>
+                                    <input type="text" id="pertanyaan" name="pertanyaan" class="w-full p-3 bg-gray-100 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#c13d60]" placeholder="Masukkan Pertanyaan" autocomplete="off">
+                                </div>
+                
+                                <!-- Email Input -->
+                                <div class="mb-6">
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                    <input type="email" id="email" name="email" class="w-full p-3 bg-gray-100 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#c13d60]" placeholder="Masukkan Email" autocomplete="off">
+                                </div>
+                
+                                <!-- Kirim Button -->
+                                <div>
+                                    <a href="" class="block w-full text-center bg-[#c13d60] text-white p-3 rounded-lg font-semibold rounded-tl-[5px] rounded-bl-[15px] rounded-tr-[15px] rounded-br-[5px]">Kirim</a>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="flex justify-center items-center mt-8 md:hidden block">
+                            <div class="space-y-4">
+                                <div class="flex items-center space-x-3">
+                                    <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.9962 9.33135C11.4255 9.33135 9.32767 11.4293 9.32767 14C9.32767 16.5707 11.4255 18.6687 13.9962 18.6687C16.5669 18.6687 18.6648 16.5707 18.6648 14C18.6648 11.4293 16.5669 9.33135 13.9962 9.33135ZM27.9984 14C27.9984 12.0667 28.0159 10.1509 27.9074 8.2211C27.7988 5.97958 27.2875 3.99024 25.6484 2.35113C24.0058 0.708519 22.02 0.200677 19.7785 0.0921032C17.8453 -0.0164701 15.9295 0.00104176 13.9997 0.00104176C12.0665 0.00104176 10.1507 -0.0164701 8.22094 0.0921032C5.97947 0.200677 3.99016 0.712022 2.35109 2.35113C0.708507 3.99374 0.200673 5.97958 0.0921015 8.2211C-0.0164698 10.1544 0.00104174 12.0702 0.00104174 14C0.00104174 15.9298 -0.0164698 17.8491 0.0921015 19.7789C0.200673 22.0204 0.712009 24.0098 2.35109 25.6489C3.99367 27.2915 5.97947 27.7993 8.22094 27.9079C10.1542 28.0165 12.07 27.999 13.9997 27.999C15.933 27.999 17.8488 28.0165 19.7785 27.9079C22.02 27.7993 24.0093 27.288 25.6484 25.6489C27.291 24.0063 27.7988 22.0204 27.9074 19.7789C28.0195 17.8491 27.9984 15.9333 27.9984 14ZM13.9962 21.1834C10.0211 21.1834 6.81302 17.9752 6.81302 14C6.81302 10.0248 10.0211 6.81665 13.9962 6.81665C17.9713 6.81665 21.1795 10.0248 21.1795 14C21.1795 17.9752 17.9713 21.1834 13.9962 21.1834ZM21.4736 8.20008C20.5455 8.20008 19.796 7.45057 19.796 6.52245C19.796 5.59432 20.5455 4.84481 21.4736 4.84481C22.4018 4.84481 23.1513 5.59432 23.1513 6.52245C23.1515 6.74284 23.1083 6.96111 23.0241 7.16478C22.9399 7.36844 22.8163 7.55349 22.6605 7.70933C22.5047 7.86517 22.3196 7.98873 22.116 8.07294C21.9123 8.15715 21.694 8.20036 21.4736 8.20008Z" fill="#333333"/>
+                                    </svg>
+                                    <span class="text-[#333333]">@healtc.id</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <svg width="20" height="30" viewBox="0 0 13 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.66667 14.8572H11.7619L13 9.90485H8.66667V7.42866C8.66667 6.15343 8.66667 4.95247 11.1429 4.95247H13V0.792474C12.5964 0.739236 11.0723 0.619141 9.46276 0.619141C6.10133 0.619141 3.71429 2.67066 3.71429 6.43819V9.90485H0V14.8572H3.71429V25.381H8.66667V14.8572Z" fill="#333333"/>
+                                    </svg>
+                                    <span class="text-[#333333]">healtc.id</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <svg width="20" height="30" viewBox="0 0 40 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M34 0.45459H6C4.4087 0.45459 2.88258 1.08673 1.75736 2.21195C0.632141 3.33717 0 4.86329 0 6.45459V26.4546C0 28.0459 0.632141 29.572 1.75736 30.6972C2.88258 31.8224 4.4087 32.4546 6 32.4546H34C35.5913 32.4546 37.1174 31.8224 38.2426 30.6972C39.3679 29.572 40 28.0459 40 26.4546V6.45459C40 4.86329 39.3679 3.33717 38.2426 2.21195C37.1174 1.08673 35.5913 0.45459 34 0.45459ZM34 4.45459L21 13.3946C20.696 13.5701 20.3511 13.6625 20 13.6625C19.6489 13.6625 19.304 13.5701 19 13.3946L6 4.45459H34Z" fill="#333333"/>
+                                    </svg>
+                                    <span class="text-[#333333]">healtcidn@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- End Kontak -->
+
+  <!-- FAQ -->
+    <section class="md:px-24 px-12 text-[#333333] mt-[6rem]">
+        <div class="w-full block md:flex space-y-8 md:space-y-0">
+            <div class="md:w-1/2 w-full">
+                <h1>FAQ</h1>
+                <h1 class="text-4xl font-semibold">Ada Pertanyaan?</h1>
+            </div>
+            <div class="md:w-1/2 w-full">
+                <div class="flex justify-center items-center">
+                    <div class="space-y-10">
+                        <div class=" mb-4 border-b border-gray-300">
+                            <h1 class=" w-full text-left py-4 px-4 font-semibold text-gray-800 bg-gray-200 rounded-lg focus:outline-none">
+                                Darimana Sumber Artikel di healtc. Berasal? 
+                            </h1>
+                            <div class="accordion-content px-4 py-2">
+                                <p class="text-gray-600">Artikel yang kami sajikan ditulis berdasarkan penelitian terbaru dan data dari dokter profesional yang memiliki kredibilitas tinggi. Kami memastikan semua informasi yang disampaikan telah melalui proses verifikasi untuk menjamin akurasi dan keandalannya.</p>
+                            </div>
+                        </div>
+                        <div class=" mb-4 border-b border-gray-300">
+                            <h1 class=" w-full text-left py-4 px-4 font-semibold text-gray-800 bg-gray-200 rounded-lg focus:outline-none">
+                                Bagaimana cara saya bisa menghubungi tim healtc. jika saya memiliki kendala? 
+                            </h1>
+                            <div class="accordion-content px-4 py-2">
+                                <p class="text-gray-600">Jika Anda memiliki pertanyaan atau mengalami masalah, Anda dapat menghubungi tim dukungan kami melalui fitur "Kontak Kami" di website ini atau mengirimkan email ke alamat yang tertera di halaman kontak. Tim kami akan siap membantu Anda dengan cepat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- End FAQ -->
+
+  <!-- Footer -->
+  <footer class="mt-[10rem]  bg-[#882947] pb-[4rem] pt-[7rem] rounded-t-3xl relative">
+    <div class="w-full lg:flex px-[4rem] justify-between">
+        <div class="mb-[3rem]">
+            <img src="assets/logo-white.svg" alt="">
+        </div>
+        <div class="grid md:grid-cols-3 grid-cols-2 gap-0 md:space-y-0 space-y-8">
+            <div class=" text-white grid gap-4">
+                <h1 class="font-bold">Menu</h1>
+                <p  >Beranda</p>
+                <p  >Tentang Kami</p>
+                <p  >Kesehatan</p>
+                <p  >Kontak</p>
+            </div>
+            <div class=" text-white grid gap-4">
+                <h1 class="font-bold">Kesehatan</h1>
+                <p  >Materi kesehatan</p>
+                <p  >Video Pembelajaran</p>
+                <p  >Konsultasi Ahli</p>
+            </div>
+            <div class=" text-white grid gap-4">
+                <h1 class="font-bold"  >Kontak Kami</h1>
+                <p  >021 5647</p>
+                <p  >@healtc.id</p>
+                <p  >healtcidn@gmail.com</p>
+                <p  >Jl. A.Yani Surabaya, Jawa Timur</p>
+            </div>
+        </div>
+    </div>
+    </footer>
+<!-- End Footer -->
+</body>
+</html>
